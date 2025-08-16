@@ -29,9 +29,21 @@ public class Assignment {
 
     }
 
+    public static void solution(){
+        String str = "ShardhaDidi";
+        String str1 = "ApnaCollege";
+        String str2 = "ShardhaDidi";
+
+        System.out.print(str.equals(str1)+" "+str.equals(str2));
+        System.out.print("\n");
+        System.out.print(str1.replace("l", " "));
+    }
+
     public static void main(String args[]){
         String name = "Karan";
         System.out.print(countVowels(name));
+
+        solution();
     }
     
 }
