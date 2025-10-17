@@ -12,18 +12,9 @@ public class Static {
 
         Animal buffalo = new Animal();
 
-        
+
 
     }
 
 }
 
-class Animal {
-
-    static String color;
-
-    Animal() {
-        System.out.print("Hey I am animal class " + "My Color is " + color);
-
-    }
-}

@@ -4,9 +4,13 @@ public class Index {
 
     public static void main(String arg[]) {
 
-        int[] nums = { -4, -1, 0, 3, 10 };
+        int i;
+        for(i=0;i<5;i++){
+            int i=10;
+            System.out.print(i);
+            i++;
 
-        System.out.print(Arrays.sort(nums));
+        }
 
     }
 }
