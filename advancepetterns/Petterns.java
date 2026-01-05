@@ -97,7 +97,7 @@ public class Petterns {
             System.out.println();
         }
 
-        //  secound half
+        // secound half
         for (int i = n; i >= 1; i--) {
 
             for (int j = 1; j <= i; j++) {
@@ -162,7 +162,7 @@ public class Petterns {
                 System.out.print("  ");
             }
 
-            for (int k = 1; k <= (2*i)-1; k ++) {
+            for (int k = 1; k <= (2 * i) - 1; k++) {
                 System.out.print("* ");
             }
 
@@ -175,12 +175,29 @@ public class Petterns {
                 System.out.print("  ");
             }
 
-            for (int k = 1; k <= (2*i)-1; k++) {
+            for (int k = 1; k <= (2 * i) - 1; k++) {
                 System.out.print("* ");
             }
 
             System.out.println();
         }
+    }
+
+    public static void pent() {
+
+        char a = 'A';
+
+        int b = a;
+        // System.out.print(b);
+
+        for (int i = 1; i <= 7; i++) {
+            for (char j = 'A'; j >= 'G'; j--) {
+                System.out.print(j);
+
+            }
+            System.out.println();
+        }
+
     }
 
     public static void main(String[] args) {
@@ -193,7 +210,9 @@ public class Petterns {
         // butterfly(8);
         // solidRhombus(10);
         // hellowRhombus(10);
-        dimond(5);
+        // dimond(5);
+
+        pent();
     }
 
 }
