@@ -1,6 +1,8 @@
+import java.util.*;
+
 public class Rat {
 
-    public static void helperRat(int mat[][], int row, int col, String path, String ans) {
+    public static void helperRat(int mat[][], int row, int col, String path, ArrayList<String> ans) {
 
         int n = mat.length;
 
@@ -11,7 +13,7 @@ public class Rat {
         }
 
         if (row == n - 1 && col == n - 1) {
-            ans += path;
+            ans.add(path);
         }
 
         mat[row][col] = -1;
@@ -27,13 +29,15 @@ public class Rat {
 
     public static void main(String args[]) {
 
-
+        ArrayList<String> ans = new ArrayList<>();
         int mat[][] = {
-            {1,0,0,0},
-            {1,1,0,1},
-            {1,1,0,0},
-            {0,1,1,1},
+                { 1, 0, 0, 0 },
+                { 1, 1, 0, 1 },
+                { 1, 1, 0, 0 },
+                { 0, 1, 1, 1 },
         };
+
+        helperRat(mat, 0, 0, null, null);
 
     }
 
