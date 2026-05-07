@@ -91,7 +91,18 @@ public class Doubly {
             return val;
         }
 
-    
+        Node temp = head;
+
+        while (temp.next != null) {
+
+            temp = temp.next;
+        }
+
+        int val = temp.data;
+
+        temp.prev.next = null;
+        temp.prev = null;
+        return val;
     }
 
     public void print() {
@@ -106,6 +117,24 @@ public class Doubly {
         System.out.print("null");
     }
 
+    public  void reverse(){
+
+        Node prev=null;
+        Node curr = head= tail;
+        Node next;
+
+        while (curr!=null) {
+            next=curr.next;
+            curr.next=prev;
+            curr.prev=next;
+            prev=curr;
+            curr=next;
+            
+        }
+
+        head=prev;
+    }
+
     public static void main(String args[]) {
 
         Doubly doubleLL = new Doubly();
@@ -115,10 +144,20 @@ public class Doubly {
         doubleLL.addFirst(3);
         doubleLL.addFirst(2);
         doubleLL.addFirst(1);
-        doubleLL.addLast(1);
-        doubleLL.addLast(4);
+        // doubleLL.addLast(1);
+        // doubleLL.addLast(4);
 
         doubleLL.print();
+    //    int res =  doubleLL.removeLast();
+        System.out.println();
+        // System.out.print(res);
+        // System.out.println();
+        doubleLL.print();
+        
+        System.out.println();
+        doubleLL.reverse();
+        doubleLL.print();
+
     }
 
 }
