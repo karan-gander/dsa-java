@@ -30,7 +30,12 @@ public class NextGrater {
         }
 
         
+            // Next grater Right
+            // Next grater left 
+            // next greater small right 
 
+            //  forms of code 
+            // next smallest left
     }
     
 }
